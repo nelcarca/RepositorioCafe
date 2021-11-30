@@ -1,0 +1,138 @@
+/*font-family: 'Allerta', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+body {
+  font-family: 'Allerta', sans-serif;
+  margin: 0px;
+}
+button {
+  border-radius: 10px;
+  background: #9c540c;
+  padding: 7px;
+  color: white;
+  border: none;
+}
+.contenedor {
+  width: 800px;
+  margin: auto;
+}
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+.title-a {
+  font-size: 24px;
+  margin-top: 0px;
+}
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.cafe {
+  color: #412b19;
+  margin-bottom: 60px;
+}
+/*SELECTOR DESCENDENTE*/
+.cafe h2 {
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* EL BACKGROUND PUEDE SER UN COLOR O UNA IMAGEN*/
+.portada {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  color: white;
+  padding: 20px;
+}
+.portada button {
+  margin-bottom: 70px;
+  }
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.menu li {
+display: inline-block;
+margin-left: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo{
+  display: inline-block;
+}
+.header {
+ position: relative; 
+ }
+ .footer {
+   background: #c29b61;
+   padding: 50px 10px;
+ }
+.cafe{
+ border: 1px solid #412B19;
+ padding: 10px;
+ /* overflow: hidden; para que no se desborde imagen */
+ margin: 10px; 
+ border-radius: 13px;
+}
+.cafe ol {
+  padding: 0px;
+}
+.right {
+float: right;
+position: relative;
+top: -126px;
+}
+.left {
+  position: relative;
+  float: left;
+}
+
+.contenedor-cafe-a{
+  padding-left: 20px;
+  position: relative;
+  bottom: 36px;
+}
+.contenedor-cafe-b {
+  margin-left: 370px;
+  position: relative;
+  bottom: 115px;
+}
+.cafe.granoscafe {
+  height: 190px;
+}
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.contacto img {
+  display: block;
+}
+.contacto strong {
+  display: block;
+}
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+.formulario {
+  display: flex;
+  color: white;
+  width: 400px;
+  /* padding-top: 50px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 50px; */
+  padding: 50px 10px;
+}
