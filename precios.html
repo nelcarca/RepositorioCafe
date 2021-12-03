@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header id="header" class="header contenedor">
 
+  <!-- header -->
+  <header id="header" class="header bacground-general">
+  <div class="contenedor">
     <figure class="logotipo">
       <!-- logotipo -->
       <!-- <img src="img/logo.png" width="60" alt="logo cafe" /> -->
@@ -25,11 +27,119 @@
       <!-- ol es una lista ordenada -->
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#cafes">Cafes</a></li>
+        <li><a href="index.html#cafes">Cafes</a></li>
         <li><a href="precios.html">Precios</a></li>
       </ul>
     </nav>
-
+  </div>
   </header>
+  <!-- /header -->
+
+  <!-- Contenido -->
+  <main>
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Productos</th>
+              <th>Precios</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capuchino</td>
+              <td>$1000</td>
+              <td>Sabor intenso en vaso Chico</td>
+            </tr>
+  
+            <tr>
+              <td>Mocachino</td>
+              <td>$1700</td>
+              <td>Sabor intenso en vaso más Chico</td>
+            </tr>
+  
+            <tr>
+              <td>Vainilla Late</td>
+              <td>$2800</td>
+              <td>Sabor intenso en vaso enano</td>
+            </tr>
+  
+          </tbody>
+        </table>
+  
+      </div>
+  
+    </section>
+  </main>
+ 
+  <!-- /Contenido -->
+
+  <!-- Footer -->
+  <footer class="footer" >
+    <div class="contenedor">
+      
+      <div class="contacto">
+        <img src="img/imagenfooter.png" alt="imagen footer" width="300" />
+  
+        <a href="tel:+569954587415"> <strong>Teléfono</strong> <span>9545874</span></a>
+  
+        <a href="mailto:contacto@cafetime.cl"> <strong>E-mail</strong> <span>contacto@cafetime.cl</span> </a>
+      </div>
+
+      <form class="formulario">
+
+        <div class="col1">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required name="nombre" />
+  
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required name="email" />
+  
+          <div class="generos">
+            <label for="mujer">
+              <input type="radio" id="mujer" name="genero" value="mujer" required> Mujer
+            </label>
+  
+            <label for="hombre">
+              <input type="radio" id="hombre" name="genero" value="hombre" required> Hombre
+            </label>
+          </div>
+  
+          <div class="intereses">
+
+            <label for="cotizacion">
+              <input type="checkbox" id="cotizacion" name="intereses[]" value="cotizacion"> Cotización
+            </label>
+  
+            <label for="reclamos">
+              <input type="checkbox" id="reclamos" name="intereses[]" value="reclamos"> Reclamos
+            </label>
+  
+            <label for="observaciones">
+              <input type="checkbox" id="observaciones" name="intereses[]" value="observaciones"> Observaciones
+            </label>
+  
+            <label for="otros">
+              <input type="checkbox" id="otros" name="intereses[]" value="otros"> Otros
+            </label>
+          </div>
+        
+        </div>
+  
+        <div class="col2">
+          <label for="comentarios">Comentarios</label>
+          <textarea name="" id="comentarios" cols="30" rows="7"></textarea>
+          <input class="button" type="submit" value="Enviar">
+        </div>
+  
+      </form>
+  
+    </div>
+  
+  </footer>
+  <!-- /Footer -->
+
 </body>
 </html>

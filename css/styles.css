@@ -3,8 +3,14 @@ font-family: 'Allerta', sans-serif;
 font-family: 'Montserrat', sans-serif; 
 */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Allerta', sans-serif;
   margin: 0; 
+}
+main {
+  flex:1;
 }
 
 .button {
@@ -64,6 +70,13 @@ input[type='checkbox']:checked:after {
 .contenedor {
   width: 800px;
   margin: auto;
+  position: relative;
+}
+.bacground-general {
+  background: #412B19;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  height: 85px;
+  color: white;
 }
 .titulo {
   font-family: 'Montserrat', sans-serif; 
@@ -248,3 +261,27 @@ input[type='checkbox']:checked:after {
   margin-top: 10px;
   font-size: 12px;
 }
+
+/* Tablas */
+
+table {
+  width: 100%; /*toma todo el ancho de tu padre contenedor*/
+}
+th {
+  background-color: #836123;
+  color: white;
+  padding: 10px 20px;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #412B19;
+  border-collapse: collapse;
+}
+.tabla {
+  margin: 50px 0px;
+}
+/* /tablas */
